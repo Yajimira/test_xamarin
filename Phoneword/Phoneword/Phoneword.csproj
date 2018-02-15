@@ -58,7 +58,6 @@
     <Compile Include="FibbonacciPage.xaml.cs">
       <DependentUpon>FibbonacciPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SliderFibo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
