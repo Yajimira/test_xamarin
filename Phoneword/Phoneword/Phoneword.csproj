@@ -33,6 +33,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="CallHistoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FibbonacciPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -44,6 +52,13 @@
     </Compile>
     <Compile Include="PhoneTranslator.cs" />
     <Compile Include="IDialer.cs" />
+    <Compile Include="CallHistoryPage.xaml.cs">
+      <DependentUpon>CallHistoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FibbonacciPage.xaml.cs">
+      <DependentUpon>FibbonacciPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SliderFibo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -37,8 +37,20 @@ namespace Phoneword
             {
                 var dialer = DependencyService.Get<IDialer>();
                 if (dialer != null)
+                {
+                    App.PhoneNumbers.Add(translatedNumber);
+                    callHistoryButton.IsEnabled = true;
                     dialer.Dial(translatedNumber);
+                }
             }
+        }
+        async void OnCallHistory(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CallHistoryPage());
+        }
+        async void OnFibbonacciPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FibbonacciPage());
         }
     }
 }
